@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Application</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <h1>Login Page</h1>
+</head>
+<body>
+    ## samm snakking med databasen men får ikke til å bruke login og vet ikke hvordan jeg skal få det til 
+    <from action="{{url_for('login')}}" method="POST">
+        <h1>login</h1>
+        User:<input type="text" name="username" required><br><br>
+        Pwd:<input type="text" name="pwd" required><br><br>
+        <input type="submit" value="Login"><br><br>
+    </from>
+    ## Add New Student Record and Display All Student Records
+    <button onclick="location.href='/enternew'">Legg til ny bruker </button><br><br><br>
+    <button onclick="location.href='/list'">Vis alle brukere </button>
+
+</body>
+</html>
